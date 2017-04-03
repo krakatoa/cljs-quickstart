@@ -6,11 +6,12 @@
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-figwheel "0.5.8"]]
 
-  :clean-targets ["out" "resources/public/js"]
+  :clean-targets ["target" "resources/public/js/out"]
 
   :dependencies [ [org.clojure/clojure "1.8.0"]
                   [org.clojure/clojurescript "1.9.473"]
-                  [org.omcljs/om "1.0.0-alpha46"]]
+                  [org.omcljs/om "1.0.0-alpha46"]
+                  [org.clojure/core.async "0.3.426"]]
 
   :cljsbuild {
     :builds [{
